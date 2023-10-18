@@ -38,7 +38,7 @@ async function getUserInput() {
 // Function to run the application
 async function run() {
     try {
-        const userInput = await getUserInput;
+        const userInput = await getUserInput();
 
         let shape;
 
