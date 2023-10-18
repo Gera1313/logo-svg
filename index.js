@@ -49,5 +49,19 @@ async function run() {
         } else if (userInput.shape === 'Square') {
             shape = new Square(userInput.shapeColor, 50); // may have to change 50
         }
+
+        // render
+    const svg = shape.render();
+
+    // saves the SVG to a file
+    fs.writeFileSync('logo.svg', svg);
+
+    // prints feedback for user if successful or not
+    console.log('Success! A file has been generated!');
+    } catch (error) {
+        console.error('Error has occurred:', error);
     }
 }
+
+// Run it
+run();
