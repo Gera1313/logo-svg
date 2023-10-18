@@ -166,4 +166,4 @@ You are required to submit the following for review:
 ---
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
 
-be sure to import Jest and Inquirer and use inquirer 8.2.4
+Removed this from package.json file under scripts.test inside the parenthesis: echo \"Error: no test specified\" && exit 1. Replaced it with jest. 

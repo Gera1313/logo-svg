@@ -1,0 +1,20 @@
+{
+  "name": "10-logo-svg",
+  "version": "1.0.0",
+  "description": "site",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "gerardo perez",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.6",
+    "jest": "^29.7.0"
+  }
+}
