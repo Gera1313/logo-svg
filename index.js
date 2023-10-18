@@ -45,9 +45,9 @@ async function run() {
         if (userInput.shape === 'Circle') {
             shape = new Circle(userInput.shapeColor, 50); // may have to change 50
         } else if (userInput.shape === 'Triangle') {
-            shape = new Triangle(userInput.shapeColor, 50); // may have to change 50
+            shape = new Triangle(userInput.shapeColor, 60); // may have to change 60
         } else if (userInput.shape === 'Square') {
-            shape = new Square(userInput.shapeColor, 50); // may have to change 50
+            shape = new Square(userInput.shapeColor, 70); // may have to change 70
         }
 
         // render
