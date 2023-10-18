@@ -34,3 +34,20 @@ async function getUserInput() {
 
     return userInput;
 }
+
+// Function to run the application
+async function run() {
+    try {
+        const userInput = await getUserInput;
+
+        let shape;
+
+        if (userInput.shape === 'Circle') {
+            shape = new Circle(userInput.shapeColor, 50); // may have to change 50
+        } else if (userInput.shape === 'Triangle') {
+            shape = new Triangle(userInput.shapeColor, 50); // may have to change 50
+        } else if (userInput.shape === 'Square') {
+            shape = new Square(userInput.shapeColor, 50); // may have to change 50
+        }
+    }
+}
