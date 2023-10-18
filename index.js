@@ -54,7 +54,7 @@ async function run() {
     const svg = shape.render();
 
     // saves the SVG to a file
-    fs.writeFileSync('logo.svg', svg);
+    fs.writeFileSync('./examples/logo.svg', svg);
 
     // prints feedback for user if successful or not
     console.log('Success! A file has been generated!');
