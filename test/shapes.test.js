@@ -4,8 +4,8 @@ const Circle = require('../lib/circle');
 const Triangle = require('../lib/triangle');
 const Square = require('../lib/square');
 
+// Test code for Circle class
 test('Circle render() method should return the correct SVG string', () => {
-    // Test code for Circle class
     const circle = new Circle('red', 50);
 
     const result = circle.render();
@@ -15,8 +15,8 @@ test('Circle render() method should return the correct SVG string', () => {
     expect(result).toContain('r="50"');
   });
   
+  // Test code for Triangle class
   test('Triangle render() method should return the correct SVG string', () => {
-    // Test code for Triangle class
     const someColor = 'blue';
 
     const triangle = new Triangle(someColor, 50, 'SampleText', 'red');
@@ -29,7 +29,16 @@ test('Circle render() method should return the correct SVG string', () => {
 
   });
   
+  // Test code for Square class
   test('Square render() method should return the correct SVG string', () => {
-    // Test code for Square class
+    const someColor = 'yellow';
+
+    const square = new Square(someColor, 50, 'SampleText', 'green');
+
+    const result = square.render();
+
+    expect(result).toContain('<rect');
+    expect(result).toContain(`fill="${someColor}"`);
+    expect(result).toContain(`fill="green"`);
   });
   
