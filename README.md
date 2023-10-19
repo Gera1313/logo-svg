@@ -37,7 +37,11 @@ The following image shows an image of the generated SVG given the following inpu
 
 ![Image showing a green circle with white text that reads "SVG.".](./Assets/Images/svg_logo.png)
 
+![Image showing a brown square with black text that reads "GPD.".](./Assets/Images/svg_logo2.png)
+
 ![Image showing inquirer in terminal used to generate the image](./Assets/Images/Inquirer.png)
+
+![Image showing results of Jest testing](./Assets/Images/testing.png)
 
 ## Installations
 
@@ -57,7 +61,7 @@ npm install
 
 [Repository](https://github.com/Gera1313/10-logo-svg)
 
-[Video]()
+[Video](https://youtu.be/yTYZvp4YYHU)
 
 * [Scalable Vector Graphics (SVG)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
 
