@@ -17,13 +17,14 @@ test('Circle render() method should return the correct SVG string', () => {
   
   test('Triangle render() method should return the correct SVG string', () => {
     // Test code for Triangle class
+    const someColor = 'blue';
 
-    const triangle = new Triangle('SampleText', 'red', 50);
+    const triangle = new Triangle(someColor, 50, 'SampleText', 'red');
 
     const result = triangle.render();
 
     expect(result).toContain('<polygon');
-    expect(result).toContain(`fill="blue"`);
+    expect(result).toContain(`fill="${someColor}"`);
     expect(result).toContain(`fill="red"`);
 
   });
