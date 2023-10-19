@@ -50,7 +50,12 @@ async function run() {
             shape = new Square(userInput.shapeColor, 70); // may have to change 70
         }
 
-        // render
+        // Sets the text and text color based on user input (lets see if this fixes the issue)
+        shape.text = userInput.text;
+        shape.textColor = userInput.textColor;
+
+
+    // render
     const svg = shape.render();
 
     // saves the SVG to a file
