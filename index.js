@@ -1,71 +1,69 @@
- // First, some connections
-
-const inquirer = require('inquirer');
-const fs = require('fs');
-const Circle = require('./lib/circle');
-const Triangle = require('./lib/triangle');
-const Square = require('./lib/square');
+// First, some connections
+const inquirer = require("inquirer");
+const fs = require("fs");
+const Circle = require("./lib/circle");
+const Triangle = require("./lib/triangle");
+const Square = require("./lib/square");
 
 // Here I will collect user input using inquirer.
 async function getUserInput() {
-    const userInput = await inquirer.prompt([
-        {
-            type: 'input',
-            name: 'text',
-            message: 'Enter three characters for your logo:',
-        },
-        {
-            type: 'input',
-            name: 'textColor',
-            message: 'Enter a color for the text color:',
-        },
-        {
-            type: 'list',
-            name: 'shape',
-            message: 'Select the shape for your logo:',
-            choices: ['Circle', 'Triangle', 'Square'],
-        },
-        {
-            type: 'input',
-            name: 'shapeColor',
-            message: 'Enter a color for the shape color:',
-        },
-    ]);
+  const userInput = await inquirer.prompt([
+    {
+      type: "input",
+      name: "text",
+      message: "Enter three characters for your logo:",
+    },
+    {
+      type: "input",
+      name: "textColor",
+      message: "Enter a color for the text color:",
+    },
+    {
+      type: "list",
+      name: "shape",
+      message: "Select the shape for your logo:",
+      choices: ["Circle", "Triangle", "Square"],
+    },
+    {
+      type: "input",
+      name: "shapeColor",
+      message: "Enter a color for the shape color:",
+    },
+  ]);
 
-    return userInput;
+  return userInput;
 }
 
 // Function to run the application
 async function run() {
-    try {
-        const userInput = await getUserInput();
+  try {
+    const userInput = await getUserInput();
 
-        let shape;
+    let shape;
 
-        if (userInput.shape === 'Circle') {
-            shape = new Circle(userInput.shapeColor, 50); // may have to change 50
-        } else if (userInput.shape === 'Triangle') {
-            shape = new Triangle(userInput.shapeColor, 60); // may have to change 60
-        } else if (userInput.shape === 'Square') {
-            shape = new Square(userInput.shapeColor, 70); // may have to change 70
-        }
+    if (userInput.shape === "Circle") {
+      shape = new Circle(userInput.shapeColor, 50); // may have to change 50
+    } else if (userInput.shape === "Triangle") {
+      shape = new Triangle(userInput.shapeColor, 60); // may have to change 60
+    } else if (userInput.shape === "Square") {
+      shape = new Square(userInput.shapeColor, 70); // may have to change 70
+    }
 
-        // Sets the text and text color based on user input (lets see if this fixes the issue)
-        shape.text = userInput.text;
-        shape.textColor = userInput.textColor;
-
+    // Sets the text and text color based on user input (lets see if this fixes the issue)
+    shape.text = userInput.text;
+    shape.textColor = userInput.textColor;
 
     // render
     const svg = shape.render();
 
     // saves the SVG to a file
-    fs.writeFileSync('./examples/logo.svg', svg);
+    fs.writeFileSync("./examples/logo.svg", svg);
 
     // prints feedback for user if successful or not
-    console.log('Success! A file has been generated!');
-    } catch (error) {
-        console.error('Error has occurred:', error);
-    }
+    console.log("Success! A file has been generated!");
+  } catch (error) {
+    console.error("Error has occurred:", error);
+  }
 }
 
 // Run it
