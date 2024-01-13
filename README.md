@@ -57,9 +57,9 @@ In addition, the following command is entered in order to install all dependenci
 npm install
 ```
 
-## Helpful links
+## Links
 
-[Repository](https://github.com/Gera1313/10-logo-svg)
+[Repository](https://github.com/Gera1313/logo-svg)
 
 [Video](https://youtu.be/yTYZvp4YYHU)
 
@@ -73,7 +73,7 @@ Other links:
 
 * [SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg)
 
-* https://www.w3schools.com/graphics/svg_circle.asp
+* [W3 Schools](https://www.w3schools.com/graphics/svg_circle.asp)
 
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle
 
@@ -84,3 +84,7 @@ Other links:
 ## Credits
 
 Those links mentioned above helped A LOT in trying to understand everything and with debugging. 
+
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
