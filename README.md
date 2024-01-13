@@ -1,8 +1,8 @@
-# Object-oriented Programming: SVG Logo Maker
+# SVG Logo Maker
 
-## The Task
+## The Project
 
-The task is to build a Node.js command-line application that takes in user input to generate a logo and save it as an [SVG file](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics). The application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a `.svg` file.
+My project is about a Node.js command-line application that takes in user input to generate a logo and save it as an [SVG file](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics). The application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a `.svg` file. This will test my Object-oriented Programming skills and put them into practice. 
 
 ### User Story
 
@@ -33,7 +33,7 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 ## Usage
 
-The following image shows an image of the generated SVG given the following input entered by the user: `SVG` for the text, `white` for the text color, `circle` from the list of shapes, and `green` for the shape color. Note that this is just an image of the output SVG and not the SVG file itself:
+The following image shows a generated SVG given the following input entered by the user: `SVG` for the text, `white` for the text color, `circle` from the list of shapes, and `green` for the shape color. Note that this is just an image of the output SVG and not the SVG file itself:
 
 ![Image showing a green circle with white text that reads "SVG.".](./Assets/Images/svg_logo.png)
 
@@ -63,6 +63,8 @@ npm install
 
 [Video](https://youtu.be/yTYZvp4YYHU)
 
+Other links: 
+
 * [Scalable Vector Graphics (SVG)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
 
 * [Basic SVG shapes](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)
@@ -81,8 +83,4 @@ npm install
 
 ## Credits
 
-As usual, would like to thank my classmates and work colleagues for the guidance.
-
-A big help thanks to the module activities, especially module 10, and the Zoom recordings. 
-
-Also, those links mentioned above helped A LOT in trying to understand everything and with debugging. 
+Those links mentioned above helped A LOT in trying to understand everything and with debugging. 
